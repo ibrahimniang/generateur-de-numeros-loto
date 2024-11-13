@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:black;
+}
+h2{
+    text-align: center;  
+    letter-spacing: 1px;
+}
+section{
+    padding: 50px;
+    border: 6px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    overflow: hidden;
+}
+p{
+    margin-bottom: 25px;
+    font-size: 13px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    border-radius: 6px;
+    color: #fff;
+    letter-spacing: 1px;
+    background:linear-gradient(to right, #e91e63, #f44336) ;
+    padding: 10px;
+}
+.box_5_nb {
+ display: flex;
+ justify-content:space-between ;
+ padding: 20px 0;
+}
+.box_1_nb {
+  padding: 20px 0;
+  text-align: center;
+}
+input {
+    height: 100px;
+    width:100px;
+    background: linear-gradient(to right, #e91e63, #f44336);
+    color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 50%;
+    outline: 0;
+    font-size: 28px ;
+}
+@media  (max-width: 1000px){
+    section{
+        width: 90%;
+    }
+    
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+button{
+    width: 49%;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 6px;
+    background: linear-gradient(to right, #e91e63, #f44336);
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}

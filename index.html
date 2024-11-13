@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generateur De numeros Loto</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- PDF labary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+     integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <section>
+        <div class="box_6_nb">
+            <p id="dataNow">10/11/2024</p>
+            <h2>Generateur de numeros de Loto entre 0 et 49</h2>
+            <div class="box_5_nb">
+                <input type="text" readonly id="nb1" value="-">
+                <input type="text" readonly id="nb2" value="-">
+                <input type="text" readonly id="nb3" value="-">
+                <input type="text" readonly id="nb4" value="-">
+                <input type="text" readonly id="nb5" value="-">
+            </div>
+            <h2>Numeros Chance entre 0 et 10</h2>
+            <div class="box_1_nb">
+                <input type="text" readonly id="nb6" value="-">
+            </div>
+            <div class="buttons">
+                <button onclick="generateNumbers()">Generer</button>
+                <button onclick="generatePDF()">Telecharger le PDF</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
